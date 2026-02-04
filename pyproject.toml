@@ -1,0 +1,14 @@
+[project]
+name = "l
+ogistics-ops-intelligence"
+version = "1.0.0"
+description = "Senior data analysis project for logistics operations using synthetic data"
+requires-python = ">=3.11"
+
+
+[tool.ruff]
+line-length = 100
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

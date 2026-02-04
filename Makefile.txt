@@ -1,0 +1,33 @@
+.PHONY: setup data clean kpi rca model forecast all
+
+
+setup:
+python -m pip install -r requirements.txt
+
+
+data:
+python -m src.00_generate_data
+python -m src.01_validate_and_clean
+
+
+kpi:
+python -m src.02_kpi_analytics
+
+
+rca:
+python -m src.03_root_cause_analysis
+
+
+model:
+python -m src.04_model_delay_risk
+
+
+forecast:
+python -m src.05_forecast_volume
+
+
+all: data kpi rca model forecast
+
+
+clean:
+rm -rf data/processed/* reports/outputs/* reports/figures/*

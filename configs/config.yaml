@@ -1,0 +1,10 @@
+random_seed: 42
+n_shipments: 120000
+start_date: "2024-01-01"
+end_date: "2025-12-31"
+output_format: "csv" # csv or parquet
+paths:
+raw_dir: "data/raw"
+processed_dir: "data/processed"
+reports_dir: "reports/outputs"
+figures_dir: "reports/figures"

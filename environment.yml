@@ -1,0 +1,17 @@
+name: logistics-ops
+channels:
+- conda-forge
+dependencies:
+- python=3.11
+- pip
+- numpy
+- pandas
+- scipy
+- scikit-learn
+- statsmodels
+- matplotlib
+- pyyaml
+- pyarrow
+- fastparquet
+- pip:
+- shap
